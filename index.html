@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VANILLA GAMES </title>
+    <link rel="shortcut icon" href="code.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vanilla OMC Games</h1>
+            <p class="subtitle">Classic games reimagined</p>
+        </header>
+
+        <div class="games-grid">
+            <div class="game-card" onclick="openGame('tic-tac-toe')">
+                <div class="game-icon">⭕</div>
+                <h2 class="game-title">Tic Tac Toe</h2>
+                <p class="game-description">Challenge yourself in this classic game of X's and O's. Play against a friend.</p>
+                <button class="play-button"><a href="toe.html" target="_parent" style="text-decoration: none; color: #fdfdfd;">Play Now</a></button>
+            </div>
+
+            <div class="game-card" onclick="openGame('pong')">
+                <div class="game-icon">🏓</div>
+                <h2 class="game-title">Pong Clone</h2>
+                <p class="game-description">Experience the timeless arcade classic. Test your reflexes in this fast-paced paddle game.</p>
+                <button class="play-button"><a href="pong.html" target="_parent" style="text-decoration: none; color: #fdfdfd;">Play Now</a></button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Vanilla OMC Games. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div id="gameModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <iframe id="gameFrame" src=""></iframe>
+        </div>
+    </div>
+
+  
+</body>
+</html>
